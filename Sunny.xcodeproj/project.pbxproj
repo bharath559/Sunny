@@ -14,6 +14,9 @@
 		67FF29801C87B9A1008B6F3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67FF297E1C87B9A1008B6F3B /* LaunchScreen.storyboard */; };
 		67FF298B1C87B9A1008B6F3B /* SunnyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FF298A1C87B9A1008B6F3B /* SunnyTests.swift */; };
 		67FF29961C87B9A1008B6F3B /* SunnyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FF29951C87B9A1008B6F3B /* SunnyUITests.swift */; };
+		67FF29A41C87B9FB008B6F3B /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67FF29A31C87B9FB008B6F3B /* bg.jpg */; };
+		67FF29A61C87BAEE008B6F3B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 67FF29A51C87BAEE008B6F3B /* logo.png */; };
+		67FF29A81C87C065008B6F3B /* NetworkProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FF29A71C87C065008B6F3B /* NetworkProcessing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		67FF29911C87B9A1008B6F3B /* SunnyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunnyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67FF29951C87B9A1008B6F3B /* SunnyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyUITests.swift; sourceTree = "<group>"; };
 		67FF29971C87B9A1008B6F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67FF29A31C87B9FB008B6F3B /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		67FF29A51C87BAEE008B6F3B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		67FF29A71C87C065008B6F3B /* NetworkProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProcessing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,15 @@
 		67FF29741C87B9A1008B6F3B /* Sunny */ = {
 			isa = PBXGroup;
 			children = (
+				67FF29A51C87BAEE008B6F3B /* logo.png */,
+				67FF29A31C87B9FB008B6F3B /* bg.jpg */,
 				67FF29751C87B9A1008B6F3B /* AppDelegate.swift */,
 				67FF29771C87B9A1008B6F3B /* ViewController.swift */,
 				67FF29791C87B9A1008B6F3B /* Main.storyboard */,
 				67FF297C1C87B9A1008B6F3B /* Assets.xcassets */,
 				67FF297E1C87B9A1008B6F3B /* LaunchScreen.storyboard */,
 				67FF29811C87B9A1008B6F3B /* Info.plist */,
+				67FF29A71C87C065008B6F3B /* NetworkProcessing.swift */,
 			);
 			path = Sunny;
 			sourceTree = "<group>";
@@ -230,7 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				67FF29801C87B9A1008B6F3B /* LaunchScreen.storyboard in Resources */,
+				67FF29A61C87BAEE008B6F3B /* logo.png in Resources */,
 				67FF297D1C87B9A1008B6F3B /* Assets.xcassets in Resources */,
+				67FF29A41C87B9FB008B6F3B /* bg.jpg in Resources */,
 				67FF297B1C87B9A1008B6F3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +269,7 @@
 			files = (
 				67FF29781C87B9A1008B6F3B /* ViewController.swift in Sources */,
 				67FF29761C87B9A1008B6F3B /* AppDelegate.swift in Sources */,
+				67FF29A81C87C065008B6F3B /* NetworkProcessing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

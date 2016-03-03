@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  Sunny
 //
-//  Created by Raghav Sai Cheedalla on 3/2/16.
-//  Copyright © 2016 Bidkraft. All rights reserved.
+//  Created by Bharath Kongara  on 3/2/16.
 //
 
 import UIKit

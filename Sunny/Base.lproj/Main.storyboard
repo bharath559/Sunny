@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sunny" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,71 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DPo-7B-M4Q">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mgh-ba-VRb">
+                                <rect key="frame" x="285" y="28" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OIq-Mn-Rge"/>
+                                    <constraint firstAttribute="width" constant="30" id="v1p-q8-d2N"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="41" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgK-IO-IWN">
+                                <rect key="frame" x="244" y="187" width="112" height="144"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="120"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fariehiet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0e-Qy-mbK">
+                                <rect key="frame" x="267" y="331.5" width="66" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhr-fd-PcF">
+                                <rect key="frame" x="262" y="166" width="77" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="5t7-r9-PFP"/>
+                                    <constraint firstAttribute="height" constant="21" id="aGK-2d-6Ko"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jgK-IO-IWN" firstAttribute="top" secondItem="qhr-fd-PcF" secondAttribute="bottom" id="5hu-u6-eNi"/>
+                            <constraint firstItem="qhr-fd-PcF" firstAttribute="centerX" secondItem="jgK-IO-IWN" secondAttribute="centerX" id="J0r-3o-t0C"/>
+                            <constraint firstItem="Mgh-ba-VRb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JTk-jN-7WC"/>
+                            <constraint firstItem="DPo-7B-M4Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pv0-aQ-PpU"/>
+                            <constraint firstAttribute="trailing" secondItem="DPo-7B-M4Q" secondAttribute="trailing" id="QQq-Di-Ube"/>
+                            <constraint firstItem="DPo-7B-M4Q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cVF-CD-ZTm"/>
+                            <constraint firstItem="jgK-IO-IWN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cmI-Hm-Y8q"/>
+                            <constraint firstItem="qhr-fd-PcF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="166" id="eya-Aw-DU8"/>
+                            <constraint firstItem="k0e-Qy-mbK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lBj-hj-bXN"/>
+                            <constraint firstItem="Mgh-ba-VRb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="pJ9-z8-Hx4"/>
+                            <constraint firstItem="k0e-Qy-mbK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="41.5" id="snb-Oi-Kg5"/>
+                            <constraint firstItem="jgK-IO-IWN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-41.5" id="tmK-Cc-WF1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DPo-7B-M4Q" secondAttribute="bottom" id="zu9-Sn-MF8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgImgView" destination="DPo-7B-M4Q" id="ENX-nL-YfU"/>
+                        <outlet property="lblCity" destination="qhr-fd-PcF" id="ytW-VS-j3l"/>
+                        <outlet property="lblTmp" destination="jgK-IO-IWN" id="Qra-vw-8I8"/>
+                        <outlet property="tmpLabel" destination="k0e-Qy-mbK" id="QRr-dr-GbG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="256" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg.jpg" width="1600" height="1067"/>
+        <image name="logo.png" width="210" height="237"/>
+    </resources>
 </document>
